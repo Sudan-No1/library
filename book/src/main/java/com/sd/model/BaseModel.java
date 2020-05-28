@@ -32,5 +32,5 @@ public class BaseModel {
     private Date updateTime;
 
     @Column(name = "updator_id")
-    private Date updatorId;
+    private String updatorId;
 }
