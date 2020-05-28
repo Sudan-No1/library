@@ -6,6 +6,7 @@ import lombok.Data;
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * @Package: com.sd.model.BaseModel
@@ -22,14 +23,14 @@ public class BaseModel {
     private String id;
 
     @Column(name = "create_time")
-    private BigDecimal createTime;
+    private Date createTime;
 
     @Column(name = "creator_id")
-    private BigDecimal creatorId;
+    private String creatorId;
 
     @Column(name = "update_time")
-    private BigDecimal updateTime;
+    private Date updateTime;
 
     @Column(name = "updator_id")
-    private BigDecimal updatorId;
+    private Date updatorId;
 }
