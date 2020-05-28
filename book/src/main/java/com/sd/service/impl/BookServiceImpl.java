@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
 
 /**
  * @Package: com.sd.service.impl.BookServiceImpl
@@ -34,6 +35,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void add(BookDto bookDto) {
+        bookDto.setBookNo(UUID.randomUUID().toString().replace("-",""));
         BookInfo bookInfo = BeanMapper.map(bookDto, BookInfo.class);
         bookMapper.insert(bookInfo);
     }

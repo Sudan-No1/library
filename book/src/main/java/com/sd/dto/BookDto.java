@@ -14,6 +14,8 @@ import java.math.BigDecimal;
  
 @Data
 public class BookDto {
+    /**图书编号*/
+    private String bookNo;
     /**书名*/
     private String name;
     /**价格*/
