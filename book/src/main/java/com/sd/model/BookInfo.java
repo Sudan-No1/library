@@ -19,6 +19,7 @@ public class BookInfo  extends BaseModel{
     /**图书编号*/
     @Column(name = "book_no")
     private String bookNo;
+
     /**书名*/
     @Column(name = "name")
     private String name;

@@ -2,6 +2,7 @@ package com.sd.controller;
 
 import com.sd.dto.BorrowInfoDto;
 import com.sd.service.BorrowService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
  
 @RestController
+@Api("借阅管理")
 public class BorrowController {
 
     @Autowired
