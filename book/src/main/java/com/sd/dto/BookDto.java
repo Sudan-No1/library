@@ -1,39 +1,28 @@
-package com.sd.model;
+package com.sd.dto;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import javax.persistence.Column;
 import java.math.BigDecimal;
 
 /**
- * @Package: com.sd.model.BookInfo
+ * @Package: com.sd.dto.BookDto
  * @Description: 
  * @author sudan
- * @date 2020/5/27 18:01
+ * @date 2020/5/28 10:49
  */
  
 @Data
-@Table(name = "book_info")
-public class BookInfo  extends BaseModel{
-
+public class BookDto {
     /**书名*/
-    @Column(name = "name")
     private String name;
-
     /**价格*/
-    @Column(name = "price")
     private BigDecimal price;
-
     /**类型*/
-    @Column(name = "type")
     private String type;
-
     /**库存数*/
-    @Column(name = "inventory")
     private Integer inventory;
-
     /**是否有效  1 有效 0 无效 若库存数量 */
-    @Column(name = "active")
     private Integer active;
 
 }

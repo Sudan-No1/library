@@ -1,5 +1,6 @@
 package com.sd.service;
 
+import com.sd.dto.BookDto;
 import com.sd.model.BookInfo;
 
 import java.util.List;
@@ -14,9 +15,9 @@ import java.util.List;
  
 public interface BookService {
 
-    List<BookInfo> list();
+    List<BookDto> list();
 
-    void add(BookInfo bookInfo);
+    void add(BookDto bookDto);
 
-    BookInfo query(String id);
+    BookDto query(String id);
 }

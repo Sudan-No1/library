@@ -1,5 +1,6 @@
 package com.sd.controller;
 
+import com.sd.dto.BookDto;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
 import io.swagger.annotations.Api;
@@ -26,17 +27,17 @@ public class BookController {
     private BookService bookService;
 
     @GetMapping("list")
-    public List<BookInfo> list(){
+    public List<BookDto> list(){
         return bookService.list();
     }
 
     @PostMapping("add")
-    public void add(BookInfo bookInfo){
-        bookService.add(bookInfo);
+    public void add(BookDto bookDto){
+        bookService.add(bookDto);
     }
 
     @PostMapping("query/{id}")
-    public BookInfo query(@PathVariable("id") String id){
+    public BookDto query(@PathVariable("id") String id){
         return bookService.query(id);
     }
 
