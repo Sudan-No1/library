@@ -10,6 +10,7 @@ import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.Objects;
 import java.util.UUID;
 
@@ -83,9 +84,14 @@ public class MybatisAop {
     private void initInsertEntity(Object object) {
         BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
         beanWrapper.setPropertyValue("id", UUID.randomUUID().toString().replace("-",""));
+        beanWrapper.setPropertyValue("creatorId", "system");
+        beanWrapper.setPropertyValue("updatorId", "system");
+        beanWrapper.setPropertyValue("createTime", new Date());
+        beanWrapper.setPropertyValue("updateTime", new Date());
     }
     private void initUpdateEntity(Object object) {
-        /*BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
-        beanWrapper.setPropertyValue("id", UUID.randomUUID().toString().replace("-",""));*/
+        BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
+        beanWrapper.setPropertyValue("updatorId", "system");
+        beanWrapper.setPropertyValue("updateTime", new Date());
     }
 }
