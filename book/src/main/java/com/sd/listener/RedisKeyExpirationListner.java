@@ -57,6 +57,7 @@ public class RedisKeyExpirationListner extends KeyExpirationEventMessageListener
             borrowService.deleteByNo(borrowNo);
             ExpiredBorrowInfo expiredBorrowInfo = BeanMapper.map(borrowInfo, ExpiredBorrowInfo.class);
             expiredBorrowInfo.setExpiredBorrowDays(1);
+            expiredBorrowInfo.setVersion(0);
             expiredBorrowService.add(expiredBorrowInfo);
         }
     }

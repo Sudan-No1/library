@@ -33,9 +33,12 @@ public class ExpiredBorrowInfo extends BaseModel {
     /**借阅天数*/
     @Column(name = "borrow_days")
     private Integer borrowDays;
-    /**已过天数*/
+    /**过期天数*/
     @Column(name = "expired_borrow_days")
     private Integer expiredBorrowDays;
+    /**版本*/
+    @Column(name = "version")
+    private Integer version;
 
 
 }

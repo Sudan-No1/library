@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
+import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +36,7 @@ public class BorrowServiceImpl implements BorrowService {
     public void borrow(BorrowInfoDto borrowInfoDto) {
         String uuid = UUID.randomUUID().toString().replace("-","");
         borrowInfoDto.setBorrowNo(uuid);
+        borrowInfoDto.setBorrowDate(new Date());
         BorrowInfo map = BeanMapper.map(borrowInfoDto, BorrowInfo.class);
         borrowMapper.insert(map);
         Integer borrowDays = borrowInfoDto.getBorrowDays();

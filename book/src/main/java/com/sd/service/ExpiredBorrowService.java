@@ -2,6 +2,8 @@ package com.sd.service;
 
 import com.sd.model.ExpiredBorrowInfo;
 
+import java.util.List;
+
 /**
  * @Package: com.sd.service.ExpiredBorrowService
  * @Description: 
@@ -12,4 +14,10 @@ import com.sd.model.ExpiredBorrowInfo;
  
 public interface ExpiredBorrowService {
     void add(ExpiredBorrowInfo expiredBorrowInfo);
+
+    List<ExpiredBorrowInfo> selectAll();
+
+    void update(ExpiredBorrowInfo expiredBorrowInfo);
+
+    int updateVersion(ExpiredBorrowInfo expiredBorrowInfo);
 }
