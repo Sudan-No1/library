@@ -48,4 +48,11 @@ public class BorrowServiceImpl implements BorrowService {
         example.createCriteria().andEqualTo("borrowNo",borrowNo);
         return borrowMapper.selectOneByExample(example);
     }
+
+    @Override
+    public void deleteByNo(String borrowNo) {
+        Example example = new Example(BorrowInfo.class);
+        example.createCriteria().andEqualTo("borrowNo",borrowNo);
+        borrowMapper.deleteByExample(example);
+    }
 }

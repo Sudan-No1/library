@@ -15,4 +15,6 @@ public interface BorrowService {
     void borrow(BorrowInfoDto borrowInfoDto);
 
     BorrowInfo selectByNo(String borrowNo);
+
+    void deleteByNo(String borrowNo);
 }
