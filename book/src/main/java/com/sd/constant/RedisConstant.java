@@ -7,7 +7,7 @@ package com.sd.constant;
  * @date 2020/5/28 16:15
  */
  
- 
+
 public interface RedisConstant {
 
     /**借款前缀*/

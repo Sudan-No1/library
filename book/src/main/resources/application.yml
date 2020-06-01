@@ -17,6 +17,11 @@ spring:
       max-idle: 10
       min-idle: 0
     timeout: 1000
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: book
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml

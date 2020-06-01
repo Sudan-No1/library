@@ -1,5 +1,6 @@
 package com.sd.controller;
 
+import com.sd.annotation.BehaviorLog;
 import com.sd.dto.BookDto;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
@@ -27,16 +28,19 @@ public class BookController {
     private BookService bookService;
 
     @GetMapping("list")
+    @BehaviorLog("查询所有图书")
     public List<BookDto> list(){
         return bookService.list();
     }
 
     @PostMapping("add")
+    @BehaviorLog("新增图书")
     public void add(BookDto bookDto){
         bookService.add(bookDto);
     }
 
     @PostMapping("query/{id}")
+    @BehaviorLog("根据id查询图书")
     public BookDto query(@PathVariable("id") String id){
         return bookService.query(id);
     }

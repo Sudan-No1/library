@@ -1,17 +1,16 @@
 package com.sd.aop;
 
-import jdk.nashorn.internal.ir.ObjectNode;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.BeanWrapperImpl;
+import org.springframework.core.annotation.Order;
 import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.stereotype.Component;
 
 import java.util.Collection;
 import java.util.Date;
-import java.util.Objects;
 import java.util.UUID;
 
 /**
@@ -24,6 +23,7 @@ import java.util.UUID;
 @Component
 @Aspect
 @Slf4j
+@Order(-1)
 public class MybatisAop {
 
     @Around("execution(* tk.mybatis.mapper.common.base.insert..*.*(..)) || " +
