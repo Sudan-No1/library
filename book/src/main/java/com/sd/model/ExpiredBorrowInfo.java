@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -36,6 +37,9 @@ public class ExpiredBorrowInfo extends BaseModel {
     /**过期天数*/
     @Column(name = "expired_borrow_days")
     private Integer expiredBorrowDays;
+    /**罚款*/
+    @Column(name = "fine")
+    private BigDecimal fine;
     /**版本*/
     @Column(name = "version")
     private Integer version;

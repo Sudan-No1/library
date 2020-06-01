@@ -14,6 +14,8 @@ import org.springframework.data.redis.connection.Message;
 import org.springframework.data.redis.listener.KeyExpirationEventMessageListener;
 import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 
+import java.math.BigDecimal;
+
 import static com.sd.constant.RedisConstant.BORROW_KEY_PREFIXES;
 
 /**
@@ -57,6 +59,7 @@ public class RedisKeyExpirationListner extends KeyExpirationEventMessageListener
             borrowService.deleteByNo(borrowNo);
             ExpiredBorrowInfo expiredBorrowInfo = BeanMapper.map(borrowInfo, ExpiredBorrowInfo.class);
             expiredBorrowInfo.setExpiredBorrowDays(1);
+            expiredBorrowInfo.setFine(new BigDecimal(0.5));
             expiredBorrowInfo.setVersion(0);
             expiredBorrowService.add(expiredBorrowInfo);
         }

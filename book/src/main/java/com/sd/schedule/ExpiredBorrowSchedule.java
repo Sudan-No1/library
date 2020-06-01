@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -36,9 +37,11 @@ public class ExpiredBorrowSchedule {
             int days = (int) ((System.currentTimeMillis()-borrowDate.getTime())/(1000*3600*24)+1-borrowDays);
             if(days != expiredBorrowDays){
                 expiredBorrowInfo.setExpiredBorrowDays(days);
+                expiredBorrowInfo.setFine(new BigDecimal(0.5).multiply(new BigDecimal(days)));
                 //关键 使用乐观锁 多台服务同时更新记录时 先更新版本号成功 才能更新数据
                 if(expiredBorrowService.updateVersion(expiredBorrowInfo) >0){
                     log.info("过期对象信息：{}，过期天数：{}",expiredBorrowInfo,days);
+
                     expiredBorrowService.update(expiredBorrowInfo);
                 }
             }
