@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HibernateDemo/HibernateDemo.iml" filepath="$PROJECT_DIR$/HibernateDemo/HibernateDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MiniORM/MiniORM.iml" filepath="$PROJECT_DIR$/MiniORM/MiniORM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" filepath="$PROJECT_DIR$/MybatisDemo/MybatisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestMiniORM/TestMiniORM.iml" filepath="$PROJECT_DIR$/TestMiniORM/TestMiniORM.iml" />
+    </modules>
+  </component>
+</project>
