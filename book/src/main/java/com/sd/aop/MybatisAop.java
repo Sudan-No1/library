@@ -1,10 +1,12 @@
 package com.sd.aop;
 
+import com.sd.util.IdWorker;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.beans.BeanWrapperImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
 import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.stereotype.Component;
@@ -25,6 +27,9 @@ import java.util.UUID;
 @Slf4j
 @Order(-1)
 public class MybatisAop {
+
+    @Autowired
+    private IdWorker idWorker;
 
     @Around("execution(* tk.mybatis.mapper.common.base.insert..*.*(..)) || " +
             "execution(* tk.mybatis.mapper.common.special..*.*(..))")
@@ -83,7 +88,7 @@ public class MybatisAop {
 
     private void initInsertEntity(Object object) {
         BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
-        beanWrapper.setPropertyValue("id", UUID.randomUUID().toString().replace("-",""));
+        beanWrapper.setPropertyValue("id",idWorker.nextId());
         beanWrapper.setPropertyValue("creatorId", "system");
         beanWrapper.setPropertyValue("updatorId", "system");
         beanWrapper.setPropertyValue("createTime", new Date());
