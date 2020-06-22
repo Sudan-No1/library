@@ -36,8 +36,8 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void add(BookDto bookDto) {
-        bookDto.setBookNo(UUID.randomUUID().toString().replace("-",""));
         BookInfo bookInfo = BeanMapper.map(bookDto, BookInfo.class);
+        bookInfo.setBookNo(UUID.randomUUID().toString().replace("-",""));
         bookMapper.insert(bookInfo);
     }
 

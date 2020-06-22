@@ -3,6 +3,7 @@ package com.sd.dto;
 import lombok.Data;
 
 import javax.persistence.Column;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -23,5 +24,6 @@ public class BorrowInfoDto {
     /**借阅开始时间*/
     private Date borrowDate;
     /**借阅天数*/
+    @NotNull(message = "借阅天数不能为空")
     private Integer borrowDays;
 }

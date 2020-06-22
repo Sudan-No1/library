@@ -1,6 +1,7 @@
 package com.sd.controller;
 
 import com.sd.annotation.BehaviorLog;
+import com.sd.annotation.RepeatSubmit;
 import com.sd.dto.BookDto;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
@@ -11,7 +12,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
 import java.util.List;
+
+import static com.sd.constant.RedisConstant.REPEATSUBMIT_BOOK;
 
 /**
  * @Package: com.sd.controller.BookController
@@ -35,7 +39,8 @@ public class BookController {
 
     @PostMapping("add")
     @BehaviorLog("新增图书")
-    public void add(BookDto bookDto){
+    @RepeatSubmit(prefix = REPEATSUBMIT_BOOK,time = 5)
+    public void add(@Valid BookDto bookDto){
         bookService.add(bookDto);
     }
 
