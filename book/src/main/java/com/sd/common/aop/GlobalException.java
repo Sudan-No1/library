@@ -1,7 +1,7 @@
-package com.sd.aop;
+package com.sd.common.aop;
 
 import com.sd.dto.InvokeResult;
-import com.sd.exception.BusinessException;
+import com.sd.common.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @Package: com.sd.aop.GlobalException
+ * @Package: com.sd.common.aop.GlobalException
  * @Description: 
  * @author sudan
  * @date 2020/6/1 13:53

@@ -22,9 +22,6 @@ public class StudentInfo  extends BaseModel{
     /**班级*/
     @Column(name = "class_no")
     private String classNo;
-    /**学号*/
-    @Column(name = "student_no")
-    private String studentNo;
     /**邮箱*/
     @Column(name = "email")
     private String email;

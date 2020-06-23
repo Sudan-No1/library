@@ -1,15 +1,13 @@
 package com.sd.service.impl;
 
 import com.sd.dto.BookDto;
-import com.sd.exception.BusinessException;
 import com.sd.mapper.BookMapper;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
-import com.sd.util.BeanMapper;
+import com.sd.common.util.BeanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cglib.beans.BeanMap;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
+import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
 import java.util.UUID;
@@ -37,13 +35,25 @@ public class BookServiceImpl implements BookService {
     @Override
     public void add(BookDto bookDto) {
         BookInfo bookInfo = BeanMapper.map(bookDto, BookInfo.class);
-        bookInfo.setBookNo(UUID.randomUUID().toString().replace("-",""));
+        bookInfo.setActive(1);
         bookMapper.insert(bookInfo);
     }
 
     @Override
-    public BookDto query(String id) {
-        BookInfo bookInfo = bookMapper.selectByPrimaryKey(id);
-        return BeanMapper.map(bookInfo,BookDto.class);
+    public BookInfo selectById(String id) {
+        return bookMapper.selectByPrimaryKey(id);
+    }
+
+    @Override
+    public BookInfo selectByBookNo(String bookNo) {
+        Example example = new Example(BookInfo.class);
+        example.createCriteria()
+                .andEqualTo("bookNo",bookNo);
+        return bookMapper.selectOneByExample(example);
+    }
+
+    @Override
+    public void update(BookInfo bookInfo) {
+        bookMapper.updateByPrimaryKey(bookInfo);
     }
 }

@@ -19,5 +19,10 @@ public interface BookService {
 
     void add(BookDto bookDto);
 
-    BookDto query(String id);
+    BookInfo selectById(String id);
+
+
+    BookInfo selectByBookNo(String bookNo);
+
+    void update(BookInfo bookInfo);
 }

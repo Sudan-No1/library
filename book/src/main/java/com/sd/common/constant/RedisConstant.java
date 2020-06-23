@@ -1,7 +1,7 @@
-package com.sd.constant;
+package com.sd.common.constant;
 
 /**
- * @Package: com.sd.constant.RedisConstant
+ * @Package: com.sd.common.constant.RedisConstant
  * @Description: 
  * @author sudan
  * @date 2020/5/28 16:15

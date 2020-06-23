@@ -1,8 +1,8 @@
-package com.sd.aop;
+package com.sd.common.aop;
 
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Stopwatch;
-import com.sd.annotation.BehaviorLog;
+import com.sd.common.annotation.BehaviorLog;
 import com.sd.model.BehaviorRecord;
 import com.sd.service.MongodbService;
 import lombok.extern.slf4j.Slf4j;
@@ -19,7 +19,7 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @Package: com.sd.aop.BehaviorAop
+ * @Package: com.sd.common.aop.BehaviorAop
  * @Description: 
  * @author sudan
  * @date 2020/5/29 17:58
@@ -35,7 +35,7 @@ public class BehaviorAop {
     private MongodbService mongodbService;
 
     @Around("execution(* com.sd.controller..*.*(..)) && " +
-            "@annotation(com.sd.annotation.BehaviorLog)")
+            "@annotation(com.sd.common.annotation.BehaviorLog)")
     public Object around(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         MethodSignature methodSignature = (MethodSignature) proceedingJoinPoint.getSignature();
         Method method = methodSignature.getMethod();

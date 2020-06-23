@@ -1,13 +1,9 @@
 package com.sd.dto;
 
-import com.sd.annotation.RepeatParam;
-import com.sd.annotation.RepeatSubmit;
+import com.sd.common.annotation.RepeatParam;
 import lombok.Data;
-import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
-import org.springframework.format.annotation.NumberFormat;
 
-import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import java.math.BigDecimal;
 
@@ -20,6 +16,10 @@ import java.math.BigDecimal;
  
 @Data
 public class BookDto {
+
+    @NotBlank(message = "book_no")
+    private String bookNo;
+
     /**书名*/
     @NotBlank(message = "书名不能为空")
     @RepeatParam
@@ -32,7 +32,6 @@ public class BookDto {
     private String type;
     /**库存数*/
     private Integer inventory;
-    /**是否有效  1 有效 0 无效 若库存数量 */
-    private Integer active;
+
 
 }

@@ -1,4 +1,4 @@
-package com.sd.config;
+package com.sd.common.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;

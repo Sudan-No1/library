@@ -1,6 +1,6 @@
-package com.sd.aop;
+package com.sd.common.aop;
 
-import com.sd.util.IdWorker;
+import com.sd.common.util.IdWorker;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -15,7 +15,7 @@ import java.util.Collection;
 import java.util.Date;
 
 /**
- * @Package: com.sd.aop.MybatisAop
+ * @Package: com.sd.common.aop.MybatisAop
  * @Description: 
  * @author sudan
  * @date 2020/5/27 20:42

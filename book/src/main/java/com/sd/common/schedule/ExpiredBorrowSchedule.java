@@ -1,4 +1,4 @@
-package com.sd.schedule;
+package com.sd.common.schedule;
 
 import com.sd.model.ExpiredBorrowInfo;
 import com.sd.service.ExpiredBorrowService;
@@ -13,7 +13,7 @@ import java.util.List;
 
 
 /**
- * @Package: com.sd.schedule.ExpiredBorrowSchedule
+ * @Package: com.sd.common.schedule.ExpiredBorrowSchedule
  * @Description: 
  * @author sudan
  * @date 2020/5/29 15:05

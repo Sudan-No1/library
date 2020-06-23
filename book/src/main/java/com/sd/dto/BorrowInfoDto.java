@@ -15,8 +15,6 @@ import java.util.Date;
  
 @Data
 public class BorrowInfoDto {
-    /**借阅单号*/
-    private String borrowNo;
     /**学号*/
     private String studentNo;
     /**图书编号*/

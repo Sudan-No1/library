@@ -1,11 +1,11 @@
-package com.sd.util;
+package com.sd.common.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @Package: com.sd.util.DateFormatUtil
+ * @Package: com.sd.common.util.DateFormatUtil
  * @Description: 
  * @author sudan
  * @date 2020/5/28 11:11

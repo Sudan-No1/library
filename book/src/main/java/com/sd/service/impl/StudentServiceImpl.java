@@ -23,8 +23,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public StudentInfo selectByNo(String studentNo) {
-        Example example = new Example(StudentInfo.class);
-        example.createCriteria().andEqualTo("studentNo",studentNo);
-        return studentMapper.selectOneByExample(example);
+        return studentMapper.selectByPrimaryKey(studentNo);
     }
 }

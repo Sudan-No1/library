@@ -1,6 +1,7 @@
 package com.sd.model;
 
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -16,11 +17,6 @@ import java.math.BigDecimal;
 @Table(name = "book_info")
 public class BookInfo  extends BaseModel{
 
-    @Id
-    @Column(name = "id")
-    private String id;
-
-    /**图书编号*/
     @Column(name = "book_no")
     private String bookNo;
 

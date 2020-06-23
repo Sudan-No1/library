@@ -35,7 +35,7 @@ public class ExpiredBorrowServiceImpl implements ExpiredBorrowService {
     @Override
     public void update(ExpiredBorrowInfo expiredBorrowInfo) {
         Example example = new Example(ExpiredBorrowInfo.class);
-        example.createCriteria().andEqualTo("borrowNo",expiredBorrowInfo.getBorrowNo());
+        example.createCriteria().andEqualTo("id",expiredBorrowInfo.getId());
         expiredBorrowMapper.updateByExample(expiredBorrowInfo,example);
     }
 
@@ -46,7 +46,7 @@ public class ExpiredBorrowServiceImpl implements ExpiredBorrowService {
         Example example = new Example(ExpiredBorrowInfo.class);
         example.createCriteria()
                 .andEqualTo("version",version)
-                .andEqualTo("borrowNo",expiredBorrowInfo.getBorrowNo());
+                .andEqualTo("id",expiredBorrowInfo.getId());
         return expiredBorrowMapper.updateByExample(expiredBorrowInfo,example);
     }
 }

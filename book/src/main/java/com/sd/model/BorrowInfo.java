@@ -18,9 +18,6 @@ import java.util.Date;
 @Table(name = "borrow_info")
 public class BorrowInfo extends BaseModel {
 
-    /**借阅单号*/
-    @Column(name = "borrow_no")
-    private String borrowNo;
     /**学号*/
     @Column(name = "student_no")
     private String studentNo;

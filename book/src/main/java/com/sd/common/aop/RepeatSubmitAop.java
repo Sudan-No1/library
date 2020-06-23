@@ -1,8 +1,8 @@
-package com.sd.aop;
+package com.sd.common.aop;
 
-import com.sd.annotation.RepeatParam;
-import com.sd.annotation.RepeatSubmit;
-import com.sd.exception.BusinessException;
+import com.sd.common.annotation.RepeatParam;
+import com.sd.common.annotation.RepeatSubmit;
+import com.sd.common.exception.BusinessException;
 import com.sd.service.redisson.RedissonService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -17,7 +17,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
- * @Package: com.sd.aop.RepeatSubmitAop
+ * @Package: com.sd.common.aop.RepeatSubmitAop
  * @Description: 
  * @author sudan
  * @date 2020/6/17 16:42

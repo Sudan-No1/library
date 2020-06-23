@@ -1,4 +1,4 @@
-package com.sd.config;
+package com.sd.common.config;
 
 import org.apache.commons.lang3.StringUtils;
 import org.redisson.Redisson;

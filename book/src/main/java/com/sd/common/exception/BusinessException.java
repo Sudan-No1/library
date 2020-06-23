@@ -1,10 +1,9 @@
-package com.sd.exception;
+package com.sd.common.exception;
 
 import lombok.Data;
-import org.springframework.http.HttpStatus;
 
 /**
- * @Package: com.sd.exception.BusinessException
+ * @Package: com.sd.common.exception.BusinessException
  * @Description: 
  * @author sudan
  * @date 2020/6/1 14:11

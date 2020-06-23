@@ -1,4 +1,4 @@
-package com.sd.config;
+package com.sd.common.config;
 
 import java.nio.charset.Charset;
 

@@ -1,4 +1,4 @@
-package com.sd.util;
+package com.sd.common.util;
 
 import java.lang.management.ManagementFactory;
 import java.net.InetAddress;

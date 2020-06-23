@@ -1,10 +1,11 @@
 package com.sd;
 
-import com.sd.util.IdWorker;
+import com.sd.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
@@ -17,6 +18,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @SpringBootApplication
 @MapperScan(basePackages = {"com.sd.mapper"})
 @EnableScheduling
+@EnableTransactionManagement
 public class Application {
 
     public static void main(String[] args) {

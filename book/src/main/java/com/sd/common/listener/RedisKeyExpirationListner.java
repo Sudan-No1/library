@@ -1,4 +1,4 @@
-package com.sd.listener;
+package com.sd.common.listener;
 
 import com.sd.model.BorrowInfo;
 import com.sd.model.ExpiredBorrowInfo;
@@ -6,7 +6,7 @@ import com.sd.model.StudentInfo;
 import com.sd.service.BorrowService;
 import com.sd.service.ExpiredBorrowService;
 import com.sd.service.StudentService;
-import com.sd.util.BeanMapper;
+import com.sd.common.util.BeanMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +16,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 
 import java.math.BigDecimal;
 
-import static com.sd.constant.RedisConstant.BORROW_KEY_PREFIXES;
+import static com.sd.common.constant.RedisConstant.BORROW_KEY_PREFIXES;
 
 /**
  * @Package: com.yixin.yxcode.alkaid.config.RedisKeyExpirationListner

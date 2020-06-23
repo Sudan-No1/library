@@ -1,4 +1,4 @@
-package com.sd.util;
+package com.sd.common.util;
 
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Package: com.sd.util.BeanMapper
+ * @Package: com.sd.common.util.BeanMapper
  * @Description: 
  * @author sudan
  * @date 2020/5/28 10:54

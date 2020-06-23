@@ -1,12 +1,14 @@
 package com.sd.controller;
 
-import com.sd.annotation.BehaviorLog;
-import com.sd.annotation.RepeatSubmit;
+import com.sd.common.annotation.BehaviorLog;
+import com.sd.common.annotation.RepeatSubmit;
+import com.sd.common.util.BeanMapper;
 import com.sd.dto.BookDto;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.beans.BeanMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.util.List;
 
-import static com.sd.constant.RedisConstant.REPEATSUBMIT_BOOK;
+import static com.sd.common.constant.RedisConstant.REPEATSUBMIT_BOOK;
 
 /**
  * @Package: com.sd.controller.BookController
@@ -44,10 +46,12 @@ public class BookController {
         bookService.add(bookDto);
     }
 
-    @PostMapping("query/{id}")
-    @BehaviorLog("根据id查询图书")
-    public BookDto query(@PathVariable("id") String id){
-        return bookService.query(id);
+    @PostMapping("query/{bookNo}")
+    @BehaviorLog("根据订单编号查询图书")
+    public BookDto selectByBookNo(@PathVariable String bookNo){
+        BookInfo bookInfo = bookService.selectByBookNo(bookNo);
+        BookDto bookDto = BeanMapper.map(bookInfo, BookDto.class);
+        return bookDto;
     }
 
 }
