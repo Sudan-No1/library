@@ -7,9 +7,11 @@ spring:
     username: root
     password: root
   redis:
-    database: 0
-    host: localhost
-    port: 6379
+    #database: 0
+    #host: localhost
+    #port: 6379
+    cluster:
+      nodes: 192.168.177.142:6379,192.168.177.143:6379,192.168.177.144:6379
     password:
     pool:
       max-active: 200

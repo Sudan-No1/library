@@ -1,8 +1,11 @@
 package com.sd.service.impl;
 
+import com.sd.common.util.PinyinUtil;
 import com.sd.dto.BookDto;
 import com.sd.mapper.BookMapper;
 import com.sd.model.BookInfo;
+import com.sd.model.BookNoConfig;
+import com.sd.service.BookNoConfigService;
 import com.sd.service.BookService;
 import com.sd.common.util.BeanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +27,9 @@ public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookMapper bookMapper;
+    @Autowired
+    private BookNoConfigService bookNoConfigService;
+
 
     @Override
     public List<BookDto> list() {
@@ -34,7 +40,9 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void add(BookDto bookDto) {
+        String bookNo = bookNoConfigService.getBookNo(bookDto.getName());
         BookInfo bookInfo = BeanMapper.map(bookDto, BookInfo.class);
+        bookInfo.setBookNo(bookNo);
         bookInfo.setActive(1);
         bookMapper.insert(bookInfo);
     }

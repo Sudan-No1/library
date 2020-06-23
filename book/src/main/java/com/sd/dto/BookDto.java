@@ -1,6 +1,7 @@
 package com.sd.dto;
 
 import com.sd.common.annotation.RepeatParam;
+import io.swagger.annotations.ApiParam;
 import lombok.Data;
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -16,9 +17,6 @@ import java.math.BigDecimal;
  
 @Data
 public class BookDto {
-
-    @NotBlank(message = "book_no")
-    private String bookNo;
 
     /**书名*/
     @NotBlank(message = "书名不能为空")
