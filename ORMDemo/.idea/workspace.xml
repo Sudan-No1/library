@@ -1,0 +1,1052 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="25b450de-991e-42f8-b9e4-7314d69b2a9a" name="Default" comment="上传MiniORM项目" />
+    <ignored path="$PROJECT_DIR$/HibernateDemo/target/" />
+    <ignored path="$PROJECT_DIR$/MybatisDemo/target/" />
+    <ignored path="$PROJECT_DIR$/MiniORM/target/" />
+    <ignored path="$PROJECT_DIR$/TestMiniORM/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="633096664">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="9" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="9" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="792515832">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="16" />
+          <entry key="xml" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="16" />
+          <entry key="XML" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="239" />
+          <entry key="txt" value="22" />
+          <entry key="xml" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="239" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="XML" value="13" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.mapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1530">
+              <caret line="53" column="65" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/resources/miniORM.cfg.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2970">
+              <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/dao/BookDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1020">
+              <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestMiniORM/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniORM/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/utils/AnnotationUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#539#540#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99780">
+              <caret line="3423" column="19" selection-start-line="3423" selection-start-column="19" selection-end-line="3423" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>metamodel</find>
+      <find>entitySet</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/mapper/DeptEmpMapper.java" />
+        <option value="$PROJECT_DIR$/MybatisDemo/src/test/java/DeptEmpTest.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/Mapper.java" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.java" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.mapper.xml" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/main/resources/MiniORM.cfg.xml" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/test/java/BookDao.java" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/HibernateDemo/src/main/java/cn/itcast/orm/entity/Book.hbm.xml" />
+        <option value="$PROJECT_DIR$/HibernateDemo/src/main/java/cn/itcast/orm/entity/Book.java" />
+        <option value="$PROJECT_DIR$/HibernateDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/HibernateDemo/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/HibernateDemo/src/test/java/BookTest.java" />
+        <option value="$PROJECT_DIR$/MybatisDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/entity/DeptEmp.java" />
+        <option value="$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/mapper/DeptEmpMapper.xml" />
+        <option value="$PROJECT_DIR$/MybatisDemo/src/main/resources/SqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMColumn.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMId.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMTable.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/utils/Dom4jUtil.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMConfig.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/utils/AnnotationUtil.java" />
+        <option value="$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMSession.java" />
+        <option value="$PROJECT_DIR$/MiniORM/pom.xml" />
+        <option value="$PROJECT_DIR$/TestMiniORM/pom.xml" />
+        <option value="$PROJECT_DIR$/TestMiniORM/src/main/resources/miniORM.cfg.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/maven" />
+        <option name="outputLevel" value="DEBUG" />
+        <option name="userSettingsFile" value="D:\software\maven\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="generatedSourcesFolder" value="IGNORE" />
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestMiniORM" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="TestMiniORM" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ORMDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestMiniORM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ORMDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestMiniORM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="configu&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/cfg/Configuration.java&#10;abs&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/resource/jdbc/internal/AbstractLogicalConnectionImplementor.java&#10;sess&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/internal/SessionFactoryImpl.java&#10;sessioni&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/internal/SessionImpl.java&#10;ab&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/event/internal/AbstractSaveEventListener.java&#10;entity&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/action/internal/EntityIdentityInsertAction.java&#10;abstr&#9;FILE&#9;jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/event/internal/AbstractSaveEventListener.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592206295529" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zdx\Desktop\ORMDemo\MiniORM\src\main\java\cn\itcast\orm\utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.BookDao.testFindOne">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDao.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestMiniORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.orm.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.orm.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.orm.test.dao.BookDao" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDao.testFindOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestMiniORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.orm.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.orm.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.orm.test.dao.BookDao" />
+      <option name="METHOD_NAME" value="testFindOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookDao.testSave (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestMiniORM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.orm.test.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.itcast.orm.test.dao" />
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.orm.test.dao.BookDao" />
+      <option name="METHOD_NAME" value="testSave" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HibernateDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTest.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HibernateDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookTest" />
+      <option name="METHOD_NAME" value="testGet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.BookDao.testSave (1)" />
+      <item itemvalue="JUnit.BookTest.testGet" />
+      <item itemvalue="JUnit.BookTest.testDelete" />
+      <item itemvalue="JUnit.BookDao.testFindOne" />
+      <item itemvalue="JUnit.BookDao.testDelete" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BookDao.testFindOne" />
+        <item itemvalue="JUnit.BookDao.testSave (1)" />
+        <item itemvalue="JUnit.BookDao.testDelete" />
+        <item itemvalue="JUnit.BookTest.testDelete" />
+        <item itemvalue="JUnit.BookTest.testGet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25b450de-991e-42f8-b9e4-7314d69b2a9a" name="Default" comment="" />
+      <created>1539346230141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539346230141</updated>
+      <workItem from="1539346231500" duration="2108000" />
+      <workItem from="1539389669587" duration="183000" />
+      <workItem from="1539400948953" duration="76000" />
+      <workItem from="1539420697869" duration="392000" />
+      <workItem from="1539432397723" duration="2955000" />
+      <workItem from="1539517992348" duration="3189000" />
+      <workItem from="1539562766612" duration="101000" />
+      <workItem from="1539592155040" duration="3050000" />
+      <workItem from="1539649062229" duration="240000" />
+      <workItem from="1539693295731" duration="3358000" />
+      <workItem from="1539736157850" duration="19000" />
+      <workItem from="1540006979931" duration="4959000" />
+      <workItem from="1540019742321" duration="5918000" />
+      <workItem from="1540036951126" duration="200000" />
+      <workItem from="1540039434612" duration="380000" />
+      <workItem from="1540040024828" duration="4229000" />
+      <workItem from="1540080488584" duration="15000" />
+      <workItem from="1540107962695" duration="1880000" />
+      <workItem from="1540110289386" duration="7375000" />
+      <workItem from="1540170080107" duration="5575000" />
+      <workItem from="1540189490701" duration="1453000" />
+      <workItem from="1540191858866" duration="2648000" />
+      <workItem from="1540253657531" duration="33000" />
+      <workItem from="1540295506230" duration="4152000" />
+      <workItem from="1540341566258" duration="58000" />
+      <workItem from="1540468687223" duration="5130000" />
+      <workItem from="1540514843716" duration="11950000" />
+      <workItem from="1540600497427" duration="267000" />
+      <workItem from="1540643905573" duration="5510000" />
+      <workItem from="1540688010111" duration="22000" />
+      <workItem from="1540715026373" duration="3141000" />
+      <workItem from="1540727619898" duration="1180000" />
+      <workItem from="1540729114587" duration="8051000" />
+      <workItem from="1540773552842" duration="40000" />
+      <workItem from="1540798272423" duration="9656000" />
+      <workItem from="1540861032970" duration="10384000" />
+      <workItem from="1540946998527" duration="164000" />
+      <workItem from="1540977211153" duration="909000" />
+      <workItem from="1587698453017" duration="2427000" />
+      <workItem from="1592193757993" duration="2660000" />
+      <workItem from="1592202650187" duration="3627000" />
+      <workItem from="1592206337247" duration="53000" />
+    </task>
+    <task id="LOCAL-00001" summary="上传MiniORM项目">
+      <created>1592206374481</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592206374481</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="BookDao_testFindOne - 2020.06.15 at 15h 08m 32s.xml">
+      <configuration name="BookDao.testFindOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testDelete - 2020.06.15 at 15h 08m 45s.xml">
+      <configuration name="BookDao.testDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testSave_(1) - 2020.06.15 at 15h 08m 59s.xml">
+      <configuration name="BookDao.testSave (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testDelete - 2020.06.15 at 15h 18m 28s.xml">
+      <configuration name="BookDao.testDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testSave_(1) - 2020.06.15 at 15h 18m 38s.xml">
+      <configuration name="BookDao.testSave (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testSave_(1) - 2020.06.15 at 15h 21m 08s.xml">
+      <configuration name="BookDao.testSave (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testSave_(1) - 2020.06.15 at 15h 23m 12s.xml">
+      <configuration name="BookDao.testSave (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testDelete - 2020.06.15 at 15h 27m 50s.xml">
+      <configuration name="BookDao.testDelete" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testSave_(1) - 2020.06.15 at 15h 27m 55s.xml">
+      <configuration name="BookDao.testSave (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookDao_testFindOne - 2020.06.15 at 15h 28m 04s.xml">
+      <configuration name="BookDao.testFindOne" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="119717000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49324325" visible="true" weight="0.26928896" />
+      <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.5067568" side_tool="true" weight="0.18003026" />
+      <window_info id="Web" order="2" sideWeight="0.50406504" side_tool="true" weight="0.25256222" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" show_stripe_button="false" sideWeight="0.5067568" side_tool="true" weight="0.18003026" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Image Layers" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7020498" weight="0.36581197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4991453" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.3293919" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3293919" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2979502" side_tool="true" weight="0.37606838" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32954547" />
+      <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.49926794" weight="0.22764228" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32991454" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.5811966" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.36838123" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.19440243" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49324325" visible="true" weight="0.2655068" />
+      <window_info id="Structure" order="1" show_stripe_button="false" sideWeight="0.5067568" side_tool="true" weight="0.18003026" />
+      <window_info id="Web" order="2" sideWeight="0.50406504" side_tool="true" weight="0.25256222" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" show_stripe_button="false" sideWeight="0.5067568" side_tool="true" weight="0.18003026" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Persistence" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Image Layers" order="8" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7020498" visible="true" weight="0.36581197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4991453" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" show_stripe_button="false" weight="0.3293919" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3293919" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2979502" side_tool="true" weight="0.37606838" />
+      <window_info anchor="bottom" id="Database Console" order="11" weight="0.32954547" />
+      <window_info anchor="bottom" id="Application Servers" order="12" sideWeight="0.49926794" weight="0.22764228" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.5811966" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24962178" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.36838123" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.19440243" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="上传MiniORM项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传MiniORM项目" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/event/internal/AbstractSaveEventListener.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/event/internal/AbstractSaveEventListener.java</url>
+          <line>199</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/persister/entity/AbstractEntityPersister.java</url>
+          <line>4148</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/service/internal/AbstractServiceRegistryImpl.java</url>
+          <line>194</line>
+          <properties />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.java</url>
+          <line>177</line>
+          <properties />
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/boot/registry/StandardServiceRegistryBuilder.java</url>
+          <line>178</line>
+          <properties />
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class</url>
+          <line>123</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/cfg/Configuration.java</url>
+          <line>707</line>
+          <properties />
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/internal/SessionFactoryImpl.java</url>
+          <line>294</line>
+          <properties />
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/metamodel/internal/MetamodelImpl.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/dao/BookDao.java</url>
+          <line>45</line>
+          <properties class="cn.itcast.orm.test.dao.BookDao" method="testDelete">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="((MetadataImpl)metadata).typeDefinitionMap" custom="org.hibernate.boot.internal.MetadataImpl" />
+        <watch expression="sessionFactoryBuilder" />
+        <watch expression="((MetamodelImpl)this.metamodel).entityPersisterMap" custom="org.hibernate.metamodel.internal.MetamodelImpl" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperRegistry.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/session/Configuration.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/session/SqlSession.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/BlockJUnit4ClassRunner.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runner/JUnitCore.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/statements/InvokeMethod.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/model/FrameworkMethod.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/executor/BaseExecutor.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/executor/CachingExecutor.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/session/defaults/DefaultSqlSession.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperMethod.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperProxy.class" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/metamodel/internal/JpaMetaModelPopulationSetting.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/metamodel/internal/MetamodelImpl.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/internal/SessionFactoryImpl.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/boot/internal/SessionFactoryBuilderImpl.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final-sources.jar!/org/hibernate/cfg/Configuration.java" />
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/BookDao.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Resource.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/URLClassPath.class" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/ClassLoader.java" />
+    <entry file="jar://C:/apache-maven-3.1.1/rep/org/hibernate/hibernate-core/5.3.6.Final/hibernate-core-5.3.6.Final.jar!/org/hibernate/hibernate-mapping-3.0.dtd" />
+    <entry file="file://$PROJECT_DIR$/HibernateDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="40" column="23" lean-forward="true" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/entity/DeptEmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/mapper/DeptEmpMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/src/main/java/cn/itcast/orm/mapper/DeptEmpMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/src/main/resources/SqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HibernateDemo/src/main/java/cn/itcast/orm/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HibernateDemo/src/test/java/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HibernateDemo/src/main/java/cn/itcast/orm/entity/Book.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HibernateDemo/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MybatisDemo/src/test/java/DeptEmpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="31" column="62" lean-forward="true" selection-start-line="31" selection-start-column="62" selection-end-line="31" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/dao/BookDao(1).java" />
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/annotation/ORMTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/Mapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/utils/Dom4jUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3090">
+          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="53" column="65" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/resources/miniORM.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/core/ORMConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2970">
+          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="38" column="12" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MiniORM/src/main/java/cn/itcast/orm/utils/AnnotationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#539#540#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99780">
+          <caret line="3423" column="19" selection-start-line="3423" selection-start-column="19" selection-end-line="3423" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/src/main/java/cn/itcast/orm/test/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMiniORM/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Kotlin</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>MiniORM</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: dom4j:dom4j:1.6.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
