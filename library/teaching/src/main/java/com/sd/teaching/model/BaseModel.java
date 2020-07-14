@@ -45,4 +45,10 @@ public class BaseModel {
      */
     @Column(name = "updator_id")
     private String updatorId;
+
+    /**
+     * 更新人
+     */
+    @Column(name = "is_deleted")
+    private String isDeleted;
 }

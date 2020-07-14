@@ -1,7 +1,7 @@
 package com.sd.teaching.common.enums;
 
 /**
- * @Package: com.sd.teaching.common.enums.UserEnum
+ * @Package: UserEnum
  * @Description: 
  * @author sudan
  * @date 2020/7/14 10:56

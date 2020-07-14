@@ -1,8 +1,11 @@
 package com.sd.teaching;
 
+import com.sd.teaching.common.util.IdWorker;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.Bean;
+import tk.mybatis.spring.annotation.MapperScan;
 
 
 /**
@@ -14,6 +17,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  
 @SpringBootApplication
 @EnableEurekaClient
+@MapperScan(basePackages = {"com.sd.teaching.mapper"})
 public class TeachApplication {
 
     public static void main(String[] args) {
@@ -21,4 +25,8 @@ public class TeachApplication {
                 .web(true).run(args);
     }
 
+    @Bean
+    public IdWorker getIdWorker(){
+        return new IdWorker(0,0);
+    }
 }
