@@ -9,3 +9,5 @@ target/classes/com/sd/service/BookNoConfigService.class
 target/classes/com/sd/service/impl/BookNoConfigServiceImpl.class
 target/classes/com/sd/service/redisson/
 target/generated-sources/
+*.class
+
