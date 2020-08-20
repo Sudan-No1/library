@@ -65,7 +65,7 @@
 
 
 
-        <table  tableName="teacher_info" domainObjectName="TeacherInfo" >
+        <table  tableName="customer_info" domainObjectName="CustomerInfo" >
             <!--mysql 配置-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
             <!--oracle 配置-->

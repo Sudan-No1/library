@@ -63,6 +63,7 @@ public class TeacherServiceImpl extends BaseService implements TeacherService {
         PageHelper.startPage(teacherQueryDto.getPageNum(), teacherQueryDto.getPageSize());
         Example example = super.createExampleByCondition(TeacherInfo.class, teacherQueryDto);
         List<TeacherInfo> teacherInfos = teacherInfoMapper.selectByExample(example);
-        return listToPage(teacherInfos);
+        List<TeacherDto> teacherDtos = BeanMapper.mapList(teacherInfos, TeacherInfo.class, TeacherDto.class);
+        return listToPage(teacherDtos);
     }
 }
