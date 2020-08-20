@@ -16,6 +16,10 @@ import javax.persistence.Table;
 @Table(name = "student_info")
 public class StudentInfo  extends BaseModel{
 
+
+    /**学号*/
+    @Column(name = "student_no")
+    private String studentNo;
     /**姓名*/
     @Column(name = "name")
     private String name;

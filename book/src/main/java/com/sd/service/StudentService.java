@@ -1,6 +1,8 @@
 package com.sd.service;
 
-import com.sd.model.BorrowInfo;
+import com.sd.dto.Page;
+import com.sd.dto.student.StudentDto;
+import com.sd.dto.student.StudentQueryDto;
 import com.sd.model.StudentInfo;
 
 /**
@@ -12,5 +14,12 @@ import com.sd.model.StudentInfo;
  
  
 public interface StudentService {
-    StudentInfo selectByNo(String studentNo);
+
+    void add(StudentDto studentDto);
+
+    void update(StudentInfo studentInfo);
+
+    StudentInfo queryByStudentNo(String studentNo);
+
+    Page<StudentInfo> queryPage(StudentQueryDto studentQueryDto);
 }

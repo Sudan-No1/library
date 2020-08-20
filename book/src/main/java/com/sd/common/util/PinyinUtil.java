@@ -48,9 +48,4 @@ public class PinyinUtil {
         }
         return null;
     }
-
-    public static void main(String[] args) throws Exception {
-        String str = getPinyin("苏丹");
-        System.out.println(str);
-    }
 }

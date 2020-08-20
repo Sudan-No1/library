@@ -50,7 +50,7 @@ public class RedisKeyExpirationListner extends KeyExpirationEventMessageListener
             String borrowNo = expiredKey.substring(BORROW_KEY_PREFIXES.length());
             BorrowInfo borrowInfo = borrowService.selectByNo(borrowNo);
             String studentNo = borrowInfo.getStudentNo();
-            StudentInfo studentInfo = studentService.selectByNo(studentNo);
+            StudentInfo studentInfo = studentService.queryByStudentNo(studentNo);
             String name = studentInfo.getName();
             String email = studentInfo.getEmail();
             log.info("发送邮件给：{}，邮箱：{}",name,email);
