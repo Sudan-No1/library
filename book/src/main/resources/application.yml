@@ -40,3 +40,13 @@ pagehelper:
 mapper:
   b-e-f-o-r-e: true
 
+borrow:
+  student:
+    bookNum: 10
+    borrowDays: 30
+  teacher:
+    bookNum: 20
+    borrowDays: 60
+  customer:
+    bookNum: 3
+    borrowDays: 30

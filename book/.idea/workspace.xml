@@ -2,18 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6a88715-1412-4799-bf40-5b4029e19c34" name="Default Changelist" comment="完成学生信息crud">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/dto/customer/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/dto/customer/CustomerQueryDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/mapper/CustomerInfoMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/model/CustomerInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/CustomerInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/common/constant/PeopleTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/dto/borrow/BookBorrowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/OperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleFactoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/CustomerOperationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/NullPeopleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleFactoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/StudentOperationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/TeacherOperationServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/TeacherServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/TeacherServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sd/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sd/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sd/Application.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sd/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sd/controller/BookController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sd/controller/BorrowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sd/controller/BorrowController.class" afterDir="false" />
@@ -97,24 +102,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="7" />
+          <entry key="dummy" value="48" />
           <entry key="gitignore" value="35" />
-          <entry key="java" value="13209" />
-          <entry key="md" value="1485" />
+          <entry key="java" value="14343" />
+          <entry key="md" value="1492" />
           <entry key="txt" value="416" />
           <entry key="xml" value="585" />
-          <entry key="yml" value="356" />
+          <entry key="yml" value="442" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Git file" value="35" />
-          <entry key="JAVA" value="13207" />
-          <entry key="Markdown" value="1485" />
-          <entry key="PLAIN_TEXT" value="423" />
+          <entry key="JAVA" value="14341" />
+          <entry key="Markdown" value="1492" />
+          <entry key="PLAIN_TEXT" value="464" />
           <entry key="Pointcut Expression" value="2" />
           <entry key="XML" value="585" />
-          <entry key="YAML" value="356" />
+          <entry key="YAML" value="442" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -122,11 +127,11 @@
           <entry key="class" value="35" />
           <entry key="gitignore" value="8" />
           <entry key="iml" value="6" />
-          <entry key="java" value="419" />
-          <entry key="md" value="14" />
+          <entry key="java" value="445" />
+          <entry key="md" value="15" />
           <entry key="pom" value="2" />
-          <entry key="xml" value="22" />
-          <entry key="yml" value="19" />
+          <entry key="xml" value="24" />
+          <entry key="yml" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -134,10 +139,10 @@
           <entry key="CLASS" value="35" />
           <entry key="Git file" value="8" />
           <entry key="IDEA_MODULE" value="6" />
-          <entry key="JAVA" value="419" />
-          <entry key="Markdown" value="14" />
-          <entry key="XML" value="24" />
-          <entry key="YAML" value="19" />
+          <entry key="JAVA" value="445" />
+          <entry key="Markdown" value="15" />
+          <entry key="XML" value="26" />
+          <entry key="YAML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -155,85 +160,75 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/StudentServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/CustomerOperationServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
+            <state relative-caret-position="695">
+              <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#272#273#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/TeacherServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/customer/CustomerDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/customer/CustomerQueryDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/CustomerController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/common/constant/PeopleTypeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/StudentController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#637#638#0" expanded="true" />
+                <element signature="e#688#689#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/BorrowService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/TeacherController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/BorrowInfoDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+            <state relative-caret-position="210">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/CustomerServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="60" column="38" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+            <state relative-caret-position="199">
+              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/borrow/BookBorrowDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,10 +237,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/BaseService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="330">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -254,10 +258,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/mapper/CustomerInfoMapper.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/OperationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="7" column="63" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="63" />
+            <state relative-caret-position="275">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -294,47 +298,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/constant/RedisConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/model/BorrowInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/BorrowInfoDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/ExpiredBorrowServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/model/BookInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/BookService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/BookNoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/mapper/BookNoConfigMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/constant/BusinessConstant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/model/BookNoConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/BookNoConfigService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/BookDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BookNoConfigServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/model/ExpiredBorrowInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/listener/RedisListenerConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/util/PinyinUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/model/StudentInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/student/StudentDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/listener/RedisKeyExpirationListner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/student/StudentQueryDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/PageDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/Page.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/StudentService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/controller/StudentController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/StudentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/BaseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/util/CollectionUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapper/TeacherInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/teacher/TeacherDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/service/TeacherService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/mapper/TeacherInfoMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/model/TeacherInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/teacher/TeacherQueryDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/controller/TeacherController.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/model/CustomerInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/mapper/CustomerInfoMapper.java" />
@@ -345,6 +314,41 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/customer/CustomerQueryDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/TeacherServiceImpl.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleFactoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/common/constant/PeopleTypeEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/NullPeopleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleFactoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/NullPeopleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/CustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/StudentPeopleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/TeacherOperationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/source/OpreationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/OpreationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/OpreationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/NullPeopleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/PeopleFactoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/StudentOperationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/TeacherOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/OperationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/impl/CustomerOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/NullPeopleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleFactoryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/PeopleFactoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/TeacherOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/StudentOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/OperationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/source/CustomerOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/NullPeopleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/dto/borrow/BookBorrowDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/CustomerOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/StudentOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/TeacherOperationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java" />
       </list>
     </option>
   </component>
@@ -467,25 +471,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sd" type="462c0819:PsiDirectoryNode" />
               <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="customer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sd" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="book" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sd" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="borrow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
@@ -511,6 +497,27 @@
               <item name="book" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sd" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="people" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sd" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="people" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -524,6 +531,32 @@
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="javax" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="book" type="b2602c69:ProjectViewProjectNode" />
@@ -688,10 +721,10 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/git/book/src/main/java/com/sd/service/StudentService.java" />
+    <property name="SearchEverywhereHistoryKey" value="NullPeopleService&#9;FILE&#9;file://E:/git/book/src/main/java/com/sd/service/people/source/NullPeopleService.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597917399780" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1597977151981" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -968,11 +1001,18 @@
       <option name="project" value="LOCAL" />
       <updated>1597915588686</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="完成客户信息crud">
+      <created>1597917428268</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1597917428268</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219409000" />
+    <option name="totallyTimeSpent" value="226444000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,7 +1027,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974359" visible="true" weight="0.21482602" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4974359" visible="true" weight="0.2730711" />
       <window_info id="Structure" order="1" sideWeight="0.50256413" side_tool="true" weight="0.28668684" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1129,145 +1169,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/model/BookInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5.jar!/tk/mybatis/mapper/common/base/select/SelectByPrimaryKeyMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/tk/mybatis/mapper-base/1.1.5/mapper-base-1.1.5.jar!/tk/mybatis/mapper/common/example/SelectByExampleMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/common/util/BeanMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/common/listener/RedisKeyExpirationListner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="52" column="70" selection-start-line="52" selection-start-column="70" selection-end-line="52" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/ExpiredBorrowServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/PageDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#816#817#0" expanded="true" />
-            <element signature="e#856#857#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/common/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="43" lean-forward="true" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/PageInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#2247#2248#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-            <element signature="e#4430#4431#0" expanded="true" />
-            <element signature="e#4466#4467#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/PageHelper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/Page.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/Page.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#552#553#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
-            <element signature="e#2013#2014#0" expanded="true" />
-            <element signature="e#2062#2063#0" expanded="true" />
-            <element signature="e#2093#2094#0" expanded="true" />
-            <element signature="e#2139#2140#0" expanded="true" />
-            <element signature="e#2175#2176#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2290#2291#0" expanded="true" />
-            <element signature="e#2336#2337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="245" column="26" selection-start-line="245" selection-start-column="26" selection-end-line="245" selection-end-column="26" />
-          <folding>
-            <element signature="e#8380#8381#0" expanded="true" />
-            <element signature="e#8414#8415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.m2/repository/com/github/pagehelper/pagehelper/5.1.10/pagehelper-5.1.10.jar!/com/github/pagehelper/page/PageMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
@@ -1333,13 +1234,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TeacherInfoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1351,20 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="137" column="32" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -1429,27 +1309,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="705">
-            <caret line="29" column="13" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/student/StudentDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="67" column="72" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1543,7 +1406,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="235">
           <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1553,8 +1416,192 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/TeacherController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
+        <state relative-caret-position="265">
           <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="67" column="72" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="137" column="32" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="285">
+            <caret line="30" column="18" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/javax/annotation/Resource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleFactoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/NullPeopleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleFactoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/StudentOperationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#537#538#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="51" column="18" selection-start-line="49" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/TeacherOperationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/OperationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/CustomerOperationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="33" column="19" selection-start-line="33" selection-start-column="19" selection-end-line="33" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/common/constant/PeopleTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/impl/PeopleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/people/PeopleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/borrow/BookBorrowDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/impl/BorrowServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/service/BorrowService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/controller/BorrowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="e#637#638#0" expanded="true" />
+            <element signature="e#688#689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sd/dto/BorrowInfoDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>

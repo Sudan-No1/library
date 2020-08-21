@@ -2,6 +2,7 @@ package com.sd.service.impl;
 
 import com.sd.common.exception.BusinessException;
 import com.sd.dto.BorrowInfoDto;
+import com.sd.dto.borrow.BookBorrowDto;
 import com.sd.mapper.BorrowMapper;
 import com.sd.model.BookInfo;
 import com.sd.model.BorrowInfo;
@@ -9,6 +10,7 @@ import com.sd.service.BookService;
 import com.sd.service.BorrowService;
 import com.sd.service.RedisService;
 import com.sd.common.util.BeanMapper;
+import com.sd.service.people.PeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -38,10 +40,18 @@ public class BorrowServiceImpl implements BorrowService {
     @Autowired
     private BookService bookService;
 
+    @Autowired
+    private PeopleService peopleService;
+
     @Override
     @Transactional
     public void borrow(BorrowInfoDto borrowInfoDto) {
         String bookNo = borrowInfoDto.getBookNo();
+        //0.借书信息校验
+        BookBorrowDto  bookBorrowDto = peopleService.getBorrowInfo("student");
+        if(bookBorrowDto.getBorrowDays().compareTo(borrowInfoDto.getBorrowDays())<0){
+            throw new BusinessException("借书天数超过最大时间");
+        }
         //1.查询图书表，校验库存数量
         BookInfo bookInfo = bookService.selectByBookNo(bookNo);
         if(bookInfo.getActive() == 0){

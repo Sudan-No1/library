@@ -5,6 +5,7 @@ import com.sd.service.BorrowService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -22,7 +23,7 @@ public class BorrowController {
     private BorrowService borrowService;
 
     @PostMapping("borrow")
-    public void borrow(BorrowInfoDto borrowInfoDto){
+    public void borrow(@RequestBody BorrowInfoDto borrowInfoDto){
         borrowService.borrow(borrowInfoDto);
     }
 

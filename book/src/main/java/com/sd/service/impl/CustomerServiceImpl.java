@@ -16,7 +16,7 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.List;
 
 /**
- * @Package: com.sd.service.impl.CustomerServiceImpl
+ * @Package: com.sd.service.impl.CustomerOperationServiceImpl
  * @Description: 
  * @author sudan
  * @date 2020/8/20 17:45
