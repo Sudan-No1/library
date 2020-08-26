@@ -3,7 +3,7 @@ package com.sd.common.aop;
 import com.alibaba.fastjson.JSON;
 import com.google.common.base.Stopwatch;
 import com.sd.common.annotation.BehaviorLog;
-import com.sd.model.BehaviorRecord;
+import com.sd.dto.mongo.BehaviorRecord;
 import com.sd.service.MongodbService;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;

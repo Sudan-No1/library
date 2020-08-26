@@ -1,4 +1,4 @@
-package com.sd.model;
+package com.sd.dto.mongo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
