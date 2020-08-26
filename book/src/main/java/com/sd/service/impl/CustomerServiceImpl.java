@@ -60,4 +60,12 @@ public class CustomerServiceImpl extends BaseService implements CustomerService 
         List<CustomerDto> customerDtos = BeanMapper.mapList(customerInfos, CustomerInfo.class, CustomerDto.class);
         return listToPage(customerDtos);
     }
+
+    @Override
+    public CustomerInfo queryByLoginName(String loginName) {
+        Example example = super.createExample(CustomerInfo.class, criteria -> {
+            criteria.andEqualTo("loginName", loginName);
+        });
+        return customerInfoMapper.selectOneByExample(example);
+    }
 }

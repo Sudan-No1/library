@@ -39,4 +39,10 @@ public class CustomerInfo extends BaseModel {
     @Column(name = "email")
     private String email;
 
+    /**登录账号*/
+    @Column(name = "login_name")
+    private String loginName;
+    /**登录密码*/
+    @Column(name = "password")
+    private String password;
 }

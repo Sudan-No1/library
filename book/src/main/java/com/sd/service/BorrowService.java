@@ -3,6 +3,8 @@ package com.sd.service;
 import com.sd.dto.BorrowInfoDto;
 import com.sd.model.BorrowInfo;
 
+import java.util.List;
+
 /**
  * @Package: com.sd.service.BorrowService
  * @Description: 
@@ -17,4 +19,6 @@ public interface BorrowService {
     BorrowInfo selectByNo(String borrowNo);
 
     void deleteByNo(String borrowNo);
+
+    List<BorrowInfo> selectByLoginName(String loginName);
 }

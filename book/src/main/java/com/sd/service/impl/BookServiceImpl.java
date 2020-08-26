@@ -5,6 +5,7 @@ import com.sd.dto.BookDto;
 import com.sd.mapper.BookMapper;
 import com.sd.model.BookInfo;
 import com.sd.model.BookNoConfig;
+import com.sd.service.BaseService;
 import com.sd.service.BookNoConfigService;
 import com.sd.service.BookService;
 import com.sd.common.util.BeanMapper;
@@ -23,7 +24,7 @@ import java.util.UUID;
  */
  
 @Service
-public class BookServiceImpl implements BookService {
+public class BookServiceImpl extends BaseService implements BookService {
 
     @Autowired
     private BookMapper bookMapper;
@@ -63,5 +64,19 @@ public class BookServiceImpl implements BookService {
     @Override
     public void update(BookInfo bookInfo) {
         bookMapper.updateByPrimaryKey(bookInfo);
+    }
+
+    @Override
+    public int updateInventory(BookInfo bookInfo) {
+        Integer inventory = bookInfo.getInventory();
+        if(inventory.intValue() == 1){
+            bookInfo.setActive(0);
+        }
+        bookInfo.setInventory(inventory-1);
+        Example example = super.createExample(BookInfo.class, criteria -> {
+            criteria.andEqualTo("inventory", inventory);
+            criteria.andEqualTo("bookNo", bookInfo.getBookNo());
+        });
+        return bookMapper.updateByExample(bookInfo,example);
     }
 }

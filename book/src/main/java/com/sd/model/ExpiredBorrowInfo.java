@@ -23,8 +23,8 @@ public class ExpiredBorrowInfo extends BaseModel {
     @Column(name = "borrow_no")
     private String borrowNo;
     /**学号*/
-    @Column(name = "student_no")
-    private String studentNo;
+    @Column(name = "login_name")
+    private String loginName;
     /**图书编号*/
     @Column(name = "book_no")
     private String bookNo;

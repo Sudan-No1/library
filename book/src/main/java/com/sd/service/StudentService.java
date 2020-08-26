@@ -22,4 +22,6 @@ public interface StudentService {
     StudentInfo queryByStudentNo(String studentNo);
 
     Page<StudentInfo> queryPage(StudentQueryDto studentQueryDto);
+
+    StudentInfo queryByLoginName(String loginName);
 }

@@ -58,4 +58,12 @@ public class StudentServiceImpl extends BaseService implements StudentService {
         List<StudentInfo> studentInfos = studentMapper.selectByExample(example);
         return listToPage(studentInfos);
     }
+
+    @Override
+    public StudentInfo queryByLoginName(String loginName) {
+        Example example = super.createExample(StudentInfo.class, criteria -> {
+            criteria.andEqualTo("loginName", loginName);
+        });
+        return studentMapper.selectOneByExample(example);
+    }
 }

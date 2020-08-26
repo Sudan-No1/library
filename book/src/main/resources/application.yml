@@ -44,9 +44,12 @@ borrow:
   student:
     bookNum: 10
     borrowDays: 30
+    fine: 0.5
   teacher:
     bookNum: 20
     borrowDays: 60
+    fine: 0.2
   customer:
     bookNum: 3
     borrowDays: 30
+    fine: 1.

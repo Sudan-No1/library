@@ -14,6 +14,11 @@ public class TeacherInfo extends BaseModel {
      */
     @Column(name = "name")
     private String name;
+    /**
+     * 身份证号
+     */
+    @Column(name = "certificate_no")
+    private String certificateNo;
 
     /**
      * 学号
@@ -32,4 +37,11 @@ public class TeacherInfo extends BaseModel {
      */
     @Column(name = "class_no")
     private String classNo;
+
+    /**登录账号*/
+    @Column(name = "login_name")
+    private String loginName;
+    /**登录密码*/
+    @Column(name = "password")
+    private String password;
 }

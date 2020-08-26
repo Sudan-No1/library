@@ -1,5 +1,6 @@
 package com.sd.dto.customer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 @Data
@@ -29,5 +30,13 @@ public class CustomerDto{
      * 邮箱
      */
     private String email;
+
+
+    /**登录账号*/
+    @JsonIgnore
+    private String loginName;
+    /**登录密码*/
+    @JsonIgnore
+    private String password;
    
 }

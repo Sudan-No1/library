@@ -1,5 +1,8 @@
 package com.sd.common.constant;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Package: com.sd.common.constant.PeopleTypeEnum
  * @Description: 
@@ -12,7 +15,8 @@ public enum PeopleTypeEnum {
 
     PEOPLE_TYPE_ENUM_STUDENT("student","学生"),
     PEOPLE_TYPE_ENUM_TEACHER("teacher","老师"),
-    PEOPLE_TYPE_ENUM_CUSTOMER("customer","客户");
+    PEOPLE_TYPE_ENUM_CUSTOMER("customer","客户"),
+    PEOPLE_TYPE_ENUM_NULL(null,null);
 
     private String code;
     private String name;
@@ -21,11 +25,11 @@ public enum PeopleTypeEnum {
         this.name = name;
     }
 
-    private String getCode(){
+    public String getCode(){
         return code;
     }
 
-    private String getName(){
+    public String getName(){
         return name;
     }
 
@@ -36,6 +40,13 @@ public enum PeopleTypeEnum {
             }
         }
         return null;
+    }
+    public static List<String> getAllCode(){
+        List<String> list = new ArrayList<>();
+        for (PeopleTypeEnum peopleTypeEnum : values()){
+            list.add(peopleTypeEnum.getCode());
+        }
+        return list;
     }
 
 }

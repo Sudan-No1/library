@@ -25,4 +25,14 @@ public interface BookService {
     BookInfo selectByBookNo(String bookNo);
 
     void update(BookInfo bookInfo);
+
+    /**
+     * @Description 更新库存信息
+     * @param bookInfo
+     * @return int
+     * @throws
+     * @author sudan
+     * @date 2020/8/21 15:25
+     */
+    int updateInventory(BookInfo bookInfo);
 }

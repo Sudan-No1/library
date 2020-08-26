@@ -1,5 +1,6 @@
 package com.sd.dto.student;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 /**
@@ -17,4 +18,11 @@ public class StudentDto {
     private String classNo;
     /**邮箱*/
     private String email;
+
+    /**登录账号*/
+    @JsonIgnore
+    private String loginName;
+    /**登录密码*/
+    @JsonIgnore
+    private String password;
 }

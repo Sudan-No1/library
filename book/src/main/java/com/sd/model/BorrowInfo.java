@@ -18,9 +18,12 @@ import java.util.Date;
 @Table(name = "borrow_info")
 public class BorrowInfo extends BaseModel {
 
-    /**学号*/
-    @Column(name = "student_no")
-    private String studentNo;
+    /**订单号*/
+    @Column(name = "borrow_no")
+    private String borrowNo;
+    /**登录名*/
+    @Column(name = "login_name")
+    private String loginName;
     /**图书编号*/
     @Column(name = "book_no")
     private String bookNo;
@@ -30,5 +33,8 @@ public class BorrowInfo extends BaseModel {
     /**借阅天数*/
     @Column(name = "borrow_days")
     private Integer borrowDays;
+    /**是否有效订单*/
+    @Column(name = "active")
+    private Integer active;
 
 }

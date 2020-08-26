@@ -66,4 +66,12 @@ public class TeacherServiceImpl extends BaseService implements TeacherService {
         List<TeacherDto> teacherDtos = BeanMapper.mapList(teacherInfos, TeacherInfo.class, TeacherDto.class);
         return listToPage(teacherDtos);
     }
+
+    @Override
+    public TeacherInfo queryByLoginName(String loginName) {
+        Example example = super.createExample(TeacherInfo.class, criteria -> {
+            criteria.andEqualTo("loginName", loginName);
+        });
+        return teacherInfoMapper.selectOneByExample(example);
+    }
 }

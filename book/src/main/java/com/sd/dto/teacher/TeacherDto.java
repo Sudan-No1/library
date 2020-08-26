@@ -1,5 +1,6 @@
 package com.sd.dto.teacher;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -33,5 +34,12 @@ public class TeacherDto {
      * 代课班级
      */
     private String classNo;
+
+    /**登录账号*/
+    @JsonIgnore
+    private String loginName;
+    /**登录密码*/
+    @JsonIgnore
+    private String password;
 
 }

@@ -3,6 +3,7 @@ package com.sd.service;
 import com.sd.dto.Page;
 import com.sd.dto.customer.CustomerDto;
 import com.sd.dto.customer.CustomerQueryDto;
+import com.sd.model.CustomerInfo;
 
 /**
  * @Package: com.sd.service.CustomerService
@@ -20,4 +21,6 @@ public interface CustomerService {
     CustomerDto queryByCertificateNo(String certificateNo);
 
     Page<CustomerDto> queryPage(CustomerQueryDto customerQueryDto);
+
+    CustomerInfo queryByLoginName(String loginName);
 }

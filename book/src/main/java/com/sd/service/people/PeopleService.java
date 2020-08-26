@@ -1,5 +1,7 @@
 package com.sd.service.people;
 
+import com.sd.dto.LoginDto;
+import com.sd.dto.UserDto;
 import com.sd.dto.borrow.BookBorrowDto;
 
 /**
@@ -13,4 +15,7 @@ public interface PeopleService {
 
     BookBorrowDto getBorrowInfo(String code);
 
+    void login(LoginDto loginDto);
+
+    void addUser(UserDto userDto);
 }

@@ -3,6 +3,7 @@ package com.sd.service.people.impl;
 import com.sd.common.util.CollectionUtil;
 import com.sd.service.people.OperationService;
 import com.sd.service.people.PeopleFactoryService;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,9 +31,9 @@ public class PeopleFactoryServiceImpl implements PeopleFactoryService {
             return nullPeopleService;
         }
         for(OperationService peopleService : peopleServiceList){
-           if(peopleService.getCode().equals(code)){
+            if(StringUtils.equals(peopleService.getCode().getCode(),code)){
                return peopleService;
-           }
+            }
         }
         return nullPeopleService;
     }

@@ -1,5 +1,8 @@
 package com.sd.service.people;
 
+import com.sd.common.constant.PeopleTypeEnum;
+import com.sd.dto.LoginDto;
+import com.sd.dto.UserDto;
 import com.sd.dto.borrow.BookBorrowDto;
 
 /**
@@ -12,7 +15,13 @@ import com.sd.dto.borrow.BookBorrowDto;
  
 public interface OperationService {
 
-    String getCode();
+    PeopleTypeEnum getCode();
 
     BookBorrowDto getBorrowInfo();
+
+    void login(LoginDto loginDto);
+
+    void addUser(UserDto userDto);
+
+    void checkUserExist(String loginName);
 }
