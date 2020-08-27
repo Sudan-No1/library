@@ -4,11 +4,15 @@ import com.sd.dto.InvokeResult;
 import com.sd.common.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.ObjectError;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * @Package: com.sd.common.aop.GlobalException
@@ -36,6 +40,19 @@ public class GlobalException {
         int status = exception.getStatus();
         Object object = exception.getObject();
         return InvokeResult.fail(status,exception.getMessage(),object);
+    }
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    @ResponseBody
+    public InvokeResult methodArgumentNotValidException(HttpServletResponse response,MethodArgumentNotValidException exception){
+        response.setStatus(HttpStatus.OK.value());
+        BindingResult bindingResult = exception.getBindingResult();
+        List<ObjectError> allErrors = bindingResult.getAllErrors();
+        String message = "";
+        for (ObjectError allError : allErrors) {
+            message +=allError.getDefaultMessage()+";";
+        }
+        return InvokeResult.fail(message);
     }
 
 }

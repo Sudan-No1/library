@@ -1,6 +1,7 @@
 package com.sd.service;
 
-import com.sd.dto.BookDto;
+import com.sd.dto.book.BookAddDto;
+import com.sd.dto.book.BookDto;
 import com.sd.model.BookInfo;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public interface BookService {
 
     List<BookDto> list();
 
-    void add(BookDto bookDto);
+    void add(BookAddDto bookDto);
 
     BookInfo selectById(String id);
 

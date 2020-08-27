@@ -41,15 +41,18 @@ public class DictAop {
         return reslut;
     }
 
-    private void dealResult(Object object) throws IllegalAccessException {
+    private void dealResult(Object object) throws Exception {
         Field[] declaredFields = object.getClass().getDeclaredFields();
         for (Field declaredField : declaredFields) {
             if(declaredField.isAnnotationPresent(Dict.class)){
-                declaredField.setAccessible(true);
                 Dict annotation = declaredField.getAnnotation(Dict.class);
+                String name = declaredField.getName().replace("Name", "");
+                Field field = object.getClass().getDeclaredField(name);
+                field.setAccessible(true);
                 String type = annotation.type();
-                String dictName = dictionaryService.queryName(type, (String)declaredField.get(object));
+                String dictName = dictionaryService.queryName(type, (String)field.get(object));
                 if(StringUtils.isNotBlank(dictName)){
+                    declaredField.setAccessible(true);
                     declaredField.set(object,dictName);
                 }
             }

@@ -1,10 +1,9 @@
 package com.sd.service.impl;
 
-import com.sd.common.util.PinyinUtil;
-import com.sd.dto.BookDto;
+import com.sd.dto.book.BookAddDto;
+import com.sd.dto.book.BookDto;
 import com.sd.mapper.BookMapper;
 import com.sd.model.BookInfo;
-import com.sd.model.BookNoConfig;
 import com.sd.service.BaseService;
 import com.sd.service.BookNoConfigService;
 import com.sd.service.BookService;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
-import java.util.UUID;
 
 /**
  * @Package: com.sd.service.impl.BookServiceImpl
@@ -40,7 +38,7 @@ public class BookServiceImpl extends BaseService implements BookService {
     }
 
     @Override
-    public void add(BookDto bookDto) {
+    public void add(BookAddDto bookDto) {
         String bookNo = bookNoConfigService.getBookNo(bookDto.getName());
         BookInfo bookInfo = BeanMapper.map(bookDto, BookInfo.class);
         bookInfo.setBookNo(bookNo);

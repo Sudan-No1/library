@@ -3,13 +3,12 @@ package com.sd.controller;
 import com.sd.common.annotation.BehaviorLog;
 import com.sd.common.annotation.RepeatSubmit;
 import com.sd.common.util.BeanMapper;
-import com.sd.dto.BookDto;
+import com.sd.dto.book.BookAddDto;
+import com.sd.dto.book.BookDto;
 import com.sd.model.BookInfo;
 import com.sd.service.BookService;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cglib.beans.BeanMap;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -40,7 +39,7 @@ public class BookController {
     @PostMapping("add")
     @BehaviorLog("新增图书")
     @RepeatSubmit(prefix = REPEATSUBMIT_BOOK,time = 5)
-    public void add(@Valid @RequestBody BookDto bookDto){
+    public void add(@Valid @RequestBody BookAddDto bookDto){
         bookService.add(bookDto);
     }
 
