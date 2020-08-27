@@ -32,6 +32,7 @@
 - 使用策略模式，完成用户借书的操作 --已完成
 - 使用策略模式，完成书籍的录入
 - 完成数据字典的维护
+- 新增注解，查询数据字典时翻译    
 - 集成rabbitmq，数据过期，通知学生还书
 - 添加入参校验
 - 新增baseservice，抽取常用功能
@@ -39,3 +40,9 @@
 - 根据登录名查询借书信息，将多条记录合并重新组装数据
 - redis集群docker上搭建
 - 添加挡板
+- 图书信息补充：
+- responseadvice @controlleradvice实现redis缓存
+- 拦截器实现redis缓存命中
+- websocket程序编写
+- websocket拦截器
+- mysql json数据存储

@@ -1,5 +1,6 @@
 package com.sd.dto;
 
+import com.sd.common.annotation.Dict;
 import com.sd.common.annotation.RepeatParam;
 import io.swagger.annotations.ApiParam;
 import lombok.Data;
@@ -27,6 +28,7 @@ public class BookDto {
     private BigDecimal price;
     /**类型*/
     @NotBlank(message = "类型不能为空")
+    @Dict(type = "bookType")
     private String type;
     /**库存数*/
     private Integer inventory;
