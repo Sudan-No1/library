@@ -31,6 +31,9 @@ public class DictAop {
     @Around("execution(* com.sd.controller..*.*(..))")
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         Object reslut = proceedingJoinPoint.proceed();
+        if(reslut == null){
+            return null;
+        }
         if(reslut instanceof Collection){
             for(Object object : (Collection)reslut){
                 dealResult(object);

@@ -1,5 +1,6 @@
 package com.sd.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.sd.common.exception.BusinessException;
 import com.sd.common.util.CollectionUtil;
 import com.sd.common.util.IdWorker;
@@ -15,7 +16,9 @@ import com.sd.service.BookService;
 import com.sd.service.BorrowService;
 import com.sd.service.RedisService;
 import com.sd.service.people.PeopleService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,6 +31,8 @@ import java.util.concurrent.TimeUnit;
 import static com.sd.common.constant.BusinessConstant.SIGN_COMMA;
 import static com.sd.common.constant.BusinessConstant.SIGN_YES;
 import static com.sd.common.constant.BusinessConstant.SIGN_YES_STRING;
+import static com.sd.common.constant.RabbitMqConstant.MQ_EXCHANGE_NAME;
+import static com.sd.common.constant.RabbitMqConstant.MQ_KEY_BOOK_BORROW;
 import static com.sd.common.constant.RedisConstant.BORROW_KEY_PREFIXES;
 
 /**
@@ -38,6 +43,7 @@ import static com.sd.common.constant.RedisConstant.BORROW_KEY_PREFIXES;
  */
  
 @Service
+@Slf4j
 public class BorrowServiceImpl extends BaseService implements BorrowService {
 
     @Autowired
@@ -55,6 +61,9 @@ public class BorrowServiceImpl extends BaseService implements BorrowService {
     @Autowired
     private PeopleService peopleService;
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     @Override
     @Transactional
     public void borrow(BorrowInfoDto borrowInfoDto) {
@@ -67,7 +76,9 @@ public class BorrowServiceImpl extends BaseService implements BorrowService {
         //新增图书借阅表
         String borrowNo = addBorrowInfo(borrowInfoDto,bookBorrowDto,loginDto);
         //查询借阅ID，并放入缓存中
-        redisService.setEx(BORROW_KEY_PREFIXES+borrowNo, borrowNo,bookBorrowDto.getBorrowDays(), TimeUnit.DAYS);
+        log.info("redis缓存{},{}",BORROW_KEY_PREFIXES+borrowNo,bookBorrowDto.getBorrowDays());
+        //redisService.setEx(BORROW_KEY_PREFIXES+borrowNo, borrowNo,bookBorrowDto.getBorrowDays(), TimeUnit.SECONDS);
+        redisService.setEx(BORROW_KEY_PREFIXES+borrowNo, borrowNo,1, TimeUnit.SECONDS);
     }
 
     private String addBorrowInfo(BorrowInfoDto borrowInfoDto, BookBorrowDto bookBorrowDto, LoginDto loginDto) {
