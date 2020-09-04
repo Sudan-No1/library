@@ -18,7 +18,6 @@ import com.sd.service.RedisService;
 import com.sd.service.people.PeopleService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -31,8 +30,6 @@ import java.util.concurrent.TimeUnit;
 import static com.sd.common.constant.BusinessConstant.SIGN_COMMA;
 import static com.sd.common.constant.BusinessConstant.SIGN_YES;
 import static com.sd.common.constant.BusinessConstant.SIGN_YES_STRING;
-import static com.sd.common.constant.RabbitMqConstant.MQ_EXCHANGE_NAME;
-import static com.sd.common.constant.RabbitMqConstant.MQ_KEY_BOOK_BORROW;
 import static com.sd.common.constant.RedisConstant.BORROW_KEY_PREFIXES;
 
 /**
@@ -60,9 +57,6 @@ public class BorrowServiceImpl extends BaseService implements BorrowService {
 
     @Autowired
     private PeopleService peopleService;
-
-    @Autowired
-    private RabbitTemplate rabbitTemplate;
 
     @Override
     @Transactional

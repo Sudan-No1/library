@@ -1,5 +1,6 @@
 package com.sd;
 
+import com.dtflys.forest.annotation.ForestScan;
 import com.sd.common.util.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -19,6 +20,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan(basePackages = {"com.sd.mapper"})
 @EnableScheduling
 @EnableTransactionManagement
+@ForestScan(basePackages = "com.sd.service.forest")
 public class Application {
 
     public static void main(String[] args) {
