@@ -46,4 +46,5 @@
 - mysql json数据存储
 - 新增图书管理员，图书管理员和借书人员通过websocket通信
 - rocketmq连接
-- 使用 http框架Forest 获取天气信息
+- 使用 http框架Forest 获取天气信息 
+- forest官网：https://dt_flys.gitee.io/forest/#/
