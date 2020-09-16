@@ -1,16 +1,16 @@
 package com.sd.service.impl;
 
 import com.github.pagehelper.PageHelper;
+import com.sd.common.constant.MqConstant;
 import com.sd.common.util.BeanMapper;
 import com.sd.dto.Page;
 import com.sd.dto.student.StudentDto;
 import com.sd.dto.student.StudentQueryDto;
 import com.sd.mapper.StudentMapper;
-import com.sd.model.BorrowInfo;
 import com.sd.model.StudentInfo;
 import com.sd.service.BaseService;
 import com.sd.service.StudentService;
-import org.apache.commons.lang3.StringUtils;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
@@ -30,6 +30,9 @@ public class StudentServiceImpl extends BaseService implements StudentService {
     @Autowired
     private StudentMapper studentMapper;
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     @Override
     public void add(StudentDto studentDto) {
         StudentInfo studentInfo = BeanMapper.map(studentDto, StudentInfo.class);
@@ -37,6 +40,7 @@ public class StudentServiceImpl extends BaseService implements StudentService {
         String studentNo = studentDto.getClassNo()+String.format("%03d", i++);
         studentInfo.setStudentNo(studentNo);
         studentMapper.insert(studentInfo);
+        rabbitTemplate.convertAndSend(MqConstant.BOOK_EXCHANGE, MqConstant.BAODAO_ROUTING_KEY,studentNo);
     }
 
     @Override
