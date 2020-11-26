@@ -1,18 +1,32 @@
 package com.sd.common.aop;
 
+import com.sd.common.util.BeanMapper;
+import com.sd.common.util.CollectionUtil;
 import com.sd.common.util.IdWorker;
+import com.sd.dto.es.ESStudent;
+import com.sd.model.StudentInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.index.query.TermQueryBuilder;
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.annotation.Order;
+import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
+import org.springframework.data.elasticsearch.core.query.*;
 import org.springframework.jdbc.UncategorizedSQLException;
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.Field;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
+
+import static org.elasticsearch.index.query.QueryBuilders.matchAllQuery;
 
 /**
  * @Package: com.sd.common.aop.MybatisAop
@@ -29,6 +43,10 @@ public class MybatisAop {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private ElasticsearchTemplate elasticsearchTemplate;
+
 
     @Around("execution(* tk.mybatis.mapper.common.base.insert..*.*(..)) || " +
             "execution(* tk.mybatis.mapper.common.special..*.*(..))")
@@ -86,6 +104,7 @@ public class MybatisAop {
     }
 
     private void initInsertEntity(Object object) {
+        syncDataToEs(object);
         BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
         beanWrapper.setPropertyValue("id",idWorker.nextId());
         beanWrapper.setPropertyValue("creatorId", "system");
@@ -93,7 +112,38 @@ public class MybatisAop {
         beanWrapper.setPropertyValue("createTime", new Date());
         beanWrapper.setPropertyValue("updateTime", new Date());
     }
+
+    private void syncDataToEs(Object object) {
+       /* BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
+        boolQueryBuilder.must(QueryBuilders.matchQuery("name","李四"));
+      *//*  boolQueryBuilder.must(QueryBuilders.matchQuery("classNo","101847"));
+        boolQueryBuilder.must(QueryBuilders.matchPhraseQuery("email","12@qq.com"));*//*
+        NativeSearchQuery query = new NativeSearchQueryBuilder()
+                .withQuery(boolQueryBuilder)
+                .build();
+        List<ESStudent> esStudents = elasticsearchTemplate.queryForList(query, ESStudent.class);
+        System.out.println(esStudents);*/
+        if(object instanceof StudentInfo){
+            StudentInfo studentInfo = (StudentInfo)object;
+            ESStudent esStudent = BeanMapper.map(studentInfo, ESStudent.class);
+            esStudent.setId(studentInfo.getStudentNo());
+            NativeSearchQuery query = new NativeSearchQueryBuilder()
+                    .withQuery(QueryBuilders.matchPhraseQuery("name", esStudent.getName()))
+                    .build();
+            List<ESStudent> esStudents = elasticsearchTemplate.queryForList(query, ESStudent.class);
+            if(CollectionUtil.isNotEmpty(esStudents)){
+                for (ESStudent esStudent1 : esStudents){
+                    elasticsearchTemplate.delete(ESStudent.class,esStudent1.getId());
+                }
+            }
+
+            IndexQuery indexQuery = new IndexQueryBuilder().withObject(esStudent).build();
+            elasticsearchTemplate.index(indexQuery);
+        }
+    }
+
     private void initUpdateEntity(Object object) {
+        syncDataToEs(object);
         BeanWrapperImpl beanWrapper = new BeanWrapperImpl(object);
         beanWrapper.setPropertyValue("updatorId", "system");
         beanWrapper.setPropertyValue("updateTime", new Date());

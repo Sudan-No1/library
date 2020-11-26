@@ -5,6 +5,8 @@ import com.sd.dto.student.StudentDto;
 import com.sd.dto.student.StudentQueryDto;
 import com.sd.model.StudentInfo;
 
+import java.util.List;
+
 /**
  * @Package: com.sd.service.StudentService
  * @Description: 
@@ -24,4 +26,8 @@ public interface StudentService {
     Page<StudentInfo> queryPage(StudentQueryDto studentQueryDto);
 
     StudentInfo queryByLoginName(String loginName);
+
+    void esAdd(StudentDto studentDto);
+
+    List<StudentDto> esQuery(StudentDto studentDto);
 }

@@ -10,6 +10,8 @@ import com.sd.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 /**
  * @Package: com.sd.controller.StudentController
  * @Description: 
@@ -29,6 +31,20 @@ public class StudentController {
     public InvokeResult<Void> add(@RequestBody StudentDto studentDto){
         studentService.add(studentDto);
         return InvokeResult.success();
+    }
+
+    @PostMapping("es/add")
+    @BehaviorLog("新增学生")
+    public InvokeResult<Void> esAdd(@RequestBody StudentDto studentDto){
+        studentService.esAdd(studentDto);
+        return InvokeResult.success();
+    }
+
+    @PostMapping("es/query")
+    @BehaviorLog("新增学生")
+    public InvokeResult<List<StudentDto>> esQuery(@RequestBody StudentDto studentDto){
+        List<StudentDto> list = studentService.esQuery(studentDto);
+        return InvokeResult.success(list);
     }
 
     @PostMapping("update")

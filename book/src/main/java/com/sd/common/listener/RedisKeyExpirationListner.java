@@ -32,7 +32,7 @@ import static com.sd.common.constant.RedisConstant.BORROW_KEY_PREFIXES;
  */
  
 
-@Configuration
+//@Configuration
 @Slf4j
 public class RedisKeyExpirationListner extends KeyExpirationEventMessageListener {
 
