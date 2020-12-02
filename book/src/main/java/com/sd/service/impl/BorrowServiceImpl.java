@@ -60,9 +60,7 @@ public class BorrowServiceImpl extends BaseService implements BorrowService {
 
     @Override
     @Transactional
-    public void borrow(BorrowInfoDto borrowInfoDto) {
-        //获取用户信息
-        LoginDto loginDto = BaseContextHandler.getUser();
+    public void borrow(BorrowInfoDto borrowInfoDto, LoginDto loginDto) {
         //校验借书数量
         BookBorrowDto bookBorrowDto =checkBookNum(borrowInfoDto,loginDto);
         //校验并更新库存数量

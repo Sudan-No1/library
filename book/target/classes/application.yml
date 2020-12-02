@@ -20,6 +20,9 @@ spring:
       min-idle: 0
     timeout: 1000
   data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
     mongodb:
       host: localhost
       port: 27017
@@ -59,3 +62,8 @@ borrow:
     bookNum: 3
     borrowDays: 30
     fine: 1.
+
+jwt:
+  config:
+    key: sd123
+    ttl: 360000

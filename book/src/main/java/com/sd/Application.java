@@ -2,6 +2,7 @@ package com.sd;
 
 import com.dtflys.forest.annotation.ForestScan;
 import com.sd.common.util.IdWorker;
+import com.sd.util.JwtUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -31,6 +32,11 @@ public class Application {
     @Bean
     public IdWorker getIdWorker(){
         return new IdWorker(0,0);
+    }
+
+    @Bean
+    public JwtUtil jwtUtil(){
+        return new JwtUtil();
     }
 
 }

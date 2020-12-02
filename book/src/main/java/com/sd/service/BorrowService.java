@@ -1,6 +1,7 @@
 package com.sd.service;
 
 import com.sd.dto.BorrowInfoDto;
+import com.sd.dto.LoginDto;
 import com.sd.model.BorrowInfo;
 
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  
  
 public interface BorrowService {
-    void borrow(BorrowInfoDto borrowInfoDto);
+    void borrow(BorrowInfoDto borrowInfoDto, LoginDto loginDto);
 
     BorrowInfo selectByNo(String borrowNo);
 

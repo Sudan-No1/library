@@ -62,3 +62,8 @@ borrow:
     bookNum: 3
     borrowDays: 30
     fine: 1.
+
+jwt:
+  config:
+    key: sd123
+    ttl: 360000
